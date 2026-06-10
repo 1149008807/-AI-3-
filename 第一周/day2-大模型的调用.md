@@ -37,10 +37,10 @@ const messages = [
 ```
 
 ## 多轮试对话
-    ``` json
-        [
-            {"role": "user", "content": "What's the highest mountain in the world?"},
-            {"role": "assistant", "content": "The highest mountain in the world is Mount Everest."},
-            {"role": "user", "content": "What is the second?"}
-        ]
-    ```
+``` json
+    [
+        {"role": "user", "content": "What's the highest mountain in the world?"},
+        {"role": "assistant", "content": "The highest mountain in the world is Mount Everest."},
+        {"role": "user", "content": "What is the second?"}
+    ]
+```
