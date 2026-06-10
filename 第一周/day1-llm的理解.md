@@ -8,10 +8,11 @@
     2、超过上限：最早的内容会被截断遗忘
     3、日常表现：聊太久，模型忘了前面说的话
 
-## system/user/assistant：
+## system/user/assistant/tool：
     1、system（系统提示）：给模型定人设、规则、任务要求（全局指令）
     2、user（用户）：人类提问、输入内容
     3、assistant（助手）：模型输出的回答
+    4、tool工具：模型思考时调用的工具
 
 ## temperature温度：
     控制回答随机性、创造力的参数，取值一般 0～1
@@ -42,6 +43,10 @@
         {
             "role": "assistant",
             "content": "..."
+        },
+        {
+            "role": "tool",
+            "content": "返回当前坐标，这里可以是具体的函数返回值"
         }
     ]
 ```
